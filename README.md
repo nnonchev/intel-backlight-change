@@ -1,5 +1,5 @@
 # intel-backlight-change
-A script which allows to change the backlight on linux for the intel cpu.
+A script which allows to change the backlight on GNU/Linux for the intel cpu.
 
 The script is intended to be run from a program like sxhkd, or a tiling window manager like XMonad, BSPWM, etc.
 
