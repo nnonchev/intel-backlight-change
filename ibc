@@ -1,0 +1,27 @@
+#! /bin/python3.8
+
+from parser import parser
+from modules import getMax, getCurrent, setCurrent, increment, decrement
+
+if __name__ == '__main__':
+    args = parser()
+    results = []
+
+    if args.current:
+        cur_val = getCurrent()
+        results.append(f'Current value: {cur_val}')
+    if args.max:
+        max_val = getMax()
+        results.append(f'Maxmim value: {max_val}')
+    if args.set:
+        modified = setCurrent(args.set)
+        results.append(f'Current value modified: [{modified}]')
+    elif args.inc:
+        modified = increment()
+        results.append(f'Current value incremented: [{modified}]')
+    elif args.dec:
+        modified = decrement()
+        results.append(f'Current value decremented: [{modified}]')
+
+    for res in results:
+        print(res)
