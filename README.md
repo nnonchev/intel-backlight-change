@@ -1,6 +1,6 @@
 # intel-backlight-change
-
-This is a script which allows to change the backlight on linux for the intel cpu.
+A script which allows to change the backlight on linux for the intel cpu.
+The script is intended to be run from a program like sxhkd, or a tiling window manager like XMonad, BSPWM, etc.
 
 ## Prerequisites:
 * Python3.8 or higher
@@ -11,3 +11,11 @@ This is a script which allows to change the backlight on linux for the intel cpu
 
 ## How does it work
 * Make the ibc script executable
+
+## Commands
+* `--help, -h` List all available commands
+* `--current, -c` Display the current value of the brightness
+* `--max, -m` Display the maximum value of the brightness (usually 976)
+* `--set, -s` Set the current value of the brightness
+* `--inc, -i` Increment the value of the brightness (default by 100)
+* `--dec, -d` Decrement the value of the brightness (default by -100)
