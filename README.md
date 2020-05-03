@@ -11,6 +11,7 @@ The script is intended to be run from a program like sxhkd, or a tiling window m
     ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", RUN+="/bin/chgrp video /sys/class/backlight/%k/brightness"
     ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", RUN+="/bin/chmod g+w /sys/class/backlight/%k/brightness"
 ```
+    For more info check the [arch wiki page](https://wiki.archlinux.org/index.php/backlight)
 
 ## Dependency
 * There are no dependency to install
