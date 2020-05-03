@@ -6,7 +6,7 @@ The script is intended to be run from a program like sxhkd, or a tiling window m
 ## Prerequisites:
 * Python3.8 or higher
 * The user must be part of the video group
-* A udev rule such as the following can be used:
+* A udev rule must be added ( to `/etc/udev/rules.d/backlight.rules`):
 ```
     ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", RUN+="/bin/chgrp video /sys/class/backlight/%k/brightness"
     ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", RUN+="/bin/chmod g+w /sys/class/backlight/%k/brightness"
