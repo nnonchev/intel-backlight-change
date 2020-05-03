@@ -16,9 +16,6 @@ For more info check the [arch wiki page](https://wiki.archlinux.org/index.php/ba
 ## Dependency
 * There are no dependency to install
 
-## How does it work
-* Make the ibc script executable
-
 ## Commands
 * `--help, -h` List all available commands
 * `--current, -c` Display the current value of the brightness
